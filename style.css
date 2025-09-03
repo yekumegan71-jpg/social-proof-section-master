@@ -1,0 +1,90 @@
+/* Google Font: League Spartan */
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(300, 43%, 22%);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  color: hsl(303, 10%, 53%);
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.rating {
+  background: hsl(300, 24%, 96%);
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+/* Review Cards */
+.reviews {
+  display: flex;
+  gap: 2rem;
+}
+
+.card {
+  background: hsl(300, 43%, 22%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.card img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.card h4 {
+  margin: 0.5rem 0 0;
+}
+
+.card span {
+  color: hsl(333, 80%, 67%);
+  font-size: 0.9rem;
+}
+
+.card p {
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .reviews {
+    flex-direction: column;
+  }
+}
